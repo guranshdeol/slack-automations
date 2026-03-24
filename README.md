@@ -1,73 +1,80 @@
 # Weekly Work Tracker → Slack Automation
 
-Automates weekly status updates by converting structured entries in
-Google Sheets into a formatted Slack summary.
+![Status](https://img.shields.io/badge/status-active-success)
+![Platform](https://img.shields.io/badge/platform-Google%20Apps%20Script-blue)
+![License](https://img.shields.io/badge/license-MIT-lightgrey)
 
-Designed to remove the overhead of manual reporting while ensuring
+Automates weekly status updates by converting structured entries in
+**Google Sheets** into a formatted **Slack summary**.
+
+Designed to eliminate manual reporting overhead while ensuring
 consistent, structured communication.
 
 ------------------------------------------------------------------------
 
-## Overview
+## ✨ Overview
 
-This solution enables a simple workflow:
+A lightweight system to track and report work without friction:
 
--   Log work incrementally throughout the week (\~2 minutes/day)
--   Automatically generate a structured summary
--   Deliver it to Slack at a scheduled time (e.g., Friday EOD)
+-   Log work incrementally (\~2 minutes/day)
+-   Automatically generate a weekly summary
+-   Deliver it to Slack every Friday
 
-The output includes: - Accomplishments - Blockers - Planned work for the
-following week
-
-------------------------------------------------------------------------
-
-## Key Features
-
--   Automated weekly summary generation
--   Structured categorization of work items
--   Slack-native formatting using Block Kit
--   Time-based trigger (runs every Friday)
--   Minimal daily effort required
+Output includes: - ✅ Accomplishments\
+- 🚧 Blockers\
+- 🔭 Planned work
 
 ------------------------------------------------------------------------
 
-## Architecture
+## 🏗️ Architecture
 
-Google Sheets → Apps Script → Slack Webhook
+    Google Sheets  →  Apps Script  →  Slack Webhook
 
-1.  Data is captured in a structured Google Sheet
-2.  Apps Script processes the current week's entries
-3.  A formatted payload is sent via Slack Incoming Webhook
-4.  Execution is triggered automatically on a schedule
+1.  Work is logged in Google Sheets\
+2.  Apps Script processes current week data\
+3.  Structured summary is generated\
+4.  Sent to Slack via webhook\
+5.  Trigger runs automatically every Friday
 
 ------------------------------------------------------------------------
 
-## Setup
+## 📸 Example Output
+
+> Structured Slack message with categorized updates (Accomplishments,
+> Blockers, Next Steps)
+<img width="437" height="342" alt="image" src="https://github.com/user-attachments/assets/8609a3ac-8a71-4f50-b1d0-3c032ebeb5ee" />
+
+
+------------------------------------------------------------------------
+
+## ⚙️ Setup
 
 ### 1. Google Sheet
 
-Create a sheet with monthly tabs named:
+Create monthly tabs:
 
-Mar 2025\
-Apr 2025
+    Mar 2025
+    Apr 2025
 
-Each tab should contain weekly sections separated by divider rows:
+Add weekly dividers:
 
-WEEK 1 · Mar 3 -- Mar 7\
-WEEK 2 · Mar 10 -- Mar 14
+    WEEK 1  ·  Mar 3 – Mar 7
+    WEEK 2  ·  Mar 10 – Mar 14
 
-Data structure:
+Structure:
 
   Date   Task   Category   Status   Notes
   ------ ------ ---------- -------- -------
 
-Supported categories: - accomplishment - blocker - next week
+Categories: - accomplishment\
+- blocker\
+- next week
 
 ------------------------------------------------------------------------
 
-### 2. Apps Script Configuration
+### 2. Apps Script
 
-Open: Extensions → Apps Script
+Open: **Extensions → Apps Script**
 
 Paste the script and update:
 
@@ -83,26 +90,23 @@ const CONFIG = {
 
 ### 3. Slack Webhook
 
-1.  Create an Incoming Webhook in Slack
-2.  Select the target channel
-3.  Copy the webhook URL
-4.  Add it to the script configuration
+-   Create Incoming Webhook in Slack\
+-   Select channel\
+-   Copy URL → paste in config
 
 ------------------------------------------------------------------------
 
-### 4. Enable Scheduled Execution
+### 4. Schedule Automation
 
-Run the following once:
+Run once:
 
 ``` javascript
 createFridayTrigger();
 ```
 
-This schedules automatic execution every Friday at the configured time.
-
 ------------------------------------------------------------------------
 
-### 5. Test Execution
+### 5. Test
 
 ``` javascript
 testSendNow();
@@ -110,57 +114,44 @@ testSendNow();
 
 ------------------------------------------------------------------------
 
-## Output
+## 🎯 Design Principles
 
-The Slack message is structured into:
-
--   Accomplishments
--   Issues & Blockers
--   Planned Work
-
-Each entry includes: - Status indicator - Task description - Optional
-notes
+-   Low daily effort\
+-   Structured output\
+-   Automation-first\
+-   Clear communication
 
 ------------------------------------------------------------------------
 
-## Design Principles
+## 🧩 Use Cases
 
--   Minimal daily friction
--   Consistent weekly reporting
--   Clear separation of work categories
--   Automation over manual effort
-
-------------------------------------------------------------------------
-
-## Use Cases
-
--   Weekly manager updates
--   Consulting status reporting
--   Personal productivity tracking
--   Team-level reporting extensions
+-   Weekly manager updates\
+-   Consulting reports\
+-   Personal tracking\
+-   Team reporting extensions
 
 ------------------------------------------------------------------------
 
-## Limitations
+## ⚠️ Limitations
 
--   Assumes consistent sheet structure
--   Single-user workflow (by design)
--   Slack webhook required
+-   Requires consistent sheet structure\
+-   Single-user setup\
+-   Slack webhook dependency
 
 ------------------------------------------------------------------------
 
-## Future Enhancements
+## 🚀 Future Improvements
 
--   Multi-user support
--   Notion / API integrations
--   Email delivery option
+-   Multi-user support\
+-   Notion integration\
+-   Email delivery\
 -   Dashboard visualization
 
 ------------------------------------------------------------------------
 
-## Author
+## 👤 Author
 
-Guransh Deol
+**Guransh Deol**
 
 Focused on building lightweight systems that reduce operational overhead
 and improve clarity.
