@@ -3,6 +3,7 @@
 ![Platform](https://img.shields.io/badge/platform-Google%20Apps%20Script-1f6feb)
 ![Stack](https://img.shields.io/badge/stack-Slack%20%7C%20Google%20Sheets%20%7C%20Apps%20Script-4a90d9)
 ![License](https://img.shields.io/badge/license-MIT-green)
+![Visitor Count](https://visitor-badge.laobi.icu/badge?page_id=guranshdeol.slack-automations)
 
 A collection of no-code-friendly Slack automations built entirely on **Google Sheets**, **Google Apps Script**, and **Slack Workflow Builder** — no Zapier, no Make, no external servers. Everything runs inside tools your organisation already has.
 

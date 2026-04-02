@@ -1,7 +1,7 @@
 # Kantata Timesheet Compliance Tracker
 ![Status](https://img.shields.io/badge/status-active-2ea44f)
 ![Platform](https://img.shields.io/badge/platform-Google%20Apps%20Script-1f6feb)
-![Visitor Count](https://visitor-badge.laobi.icu/badge?page_id=guranshdeol.slack-timesheet-tracker)
+![Visitor Count](https://visitor-badge.laobi.icu/badge?page_id=guranshdeol.slack-automations.kantata-timesheet-tracker)
 
 An automated weekly timesheet accountability system built on **Slack Workflow Builder**, **Google Sheets**, and **Apps Script** — no third-party tools, no code to host, fully within your organisation's existing stack.
 

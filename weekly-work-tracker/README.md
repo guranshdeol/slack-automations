@@ -2,7 +2,7 @@
 
 ![Status](https://img.shields.io/badge/status-active-2ea44f)
 ![Platform](https://img.shields.io/badge/platform-Google%20Apps%20Script-1f6feb)
-![Views](https://komarev.com/ghpvc/?username=guranshdeol&repo=weekly-work-tracker-slack-automation&color=1f6feb)
+![Visitor Count](https://visitor-badge.laobi.icu/badge?page_id=guranshdeol.slack-automations.weekly-work-tracker)
 
 Automates weekly status updates by converting structured entries in **Google Sheets** into a formatted **Slack summary**. Designed to eliminate manual reporting overhead while ensuring consistent, structured communication.
 
