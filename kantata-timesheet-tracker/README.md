@@ -46,8 +46,8 @@ No Zapier. No Make. No external servers. Everything runs inside tools your org a
 ```
 kantata-timesheet-tracker/
 ├── README.md
-├── KantataTracker_Final.gs        ← Apps Script (paste into Google Apps Script)
-└── Kantata_Timesheet_Tracker_2026.xlsx  ← Upload to Google Drive, open as Sheets
+├── timesheet_tracker.gs               ← Apps Script (paste into Google Apps Script)
+└── demo_timesheet_tracker.xlsx        ← Upload to Google Drive, open as Sheets
 ```
 
 ---
@@ -88,7 +88,7 @@ The workbook has 5 tabs:
 
 ### Step 1 — Google Sheet
 
-1. Download `Kantata_Timesheet_Tracker_2026.xlsx`
+1. Download `demo_timesheet_tracker.xlsx`
 2. Upload to Google Drive → right-click → **Open with Google Sheets**
 3. Go to the **MasterList** tab and fill in your team:
    - Column A: `@handle` exactly as Slack Workflow Builder writes it (test by clicking the button once and checking what appears in the Responses sheet)
@@ -114,7 +114,7 @@ The workbook has 5 tabs:
 
 1. In your Google Sheet → **Extensions → Apps Script**
 2. Delete all default code
-3. Paste the entire contents of `KantataTracker_Final.gs`
+3. Paste the entire contents of `timesheet_tracker.gs`
 4. Click **Save**
 5. Go to **Project Settings** (gear icon) → scroll to **Time zone** → set to `(UTC+00:00) UTC`
 
